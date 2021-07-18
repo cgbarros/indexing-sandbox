@@ -1,2 +1,2 @@
 User-agent: *
-Disallow: /static/blocked.html
+Disallow: /blocked.html

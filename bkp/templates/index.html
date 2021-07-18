@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta name="google-site-verification" content="K5u7BSA9-sx6S3mtBTOZYb2tYMQsRhZ6Nbs_Sx-5Ew8" />
+	<meta charset="utf-8">
+	<title>Indexing test app</title>
+</head>
+
+<body>
+	<h1>Indexing testing pages</h1>
+
+	<h2>Redirects</h2>
+	<p>
+		<a href="redirect-hell/redirect1.html"> Redirect hell </a>: redirect loop using 301 http responses. Your browser should
+		show an error.<br>
+      <a href="static/meta-redirect1.html"> Redirect hell - meta version </a>: redirect loop using <code>&lt;meta http-equiv=&quot;refresh&quot;&gt;</code>. Your browser will not know what to do.<br>
+      <a href="static/meta-chain/meta-chain01.html"> Meta chain:</a> 13-pages of chain redirects using <code>&lt;meta http-equiv=&quot;refresh&quot;&gt;</code>. Too much for Google.<br>
+    </p>
+
+    <h2>Duplicates</h2>
+    <p>
+      <a href="static/canonical-is-the-index.html">Not the index - meta tag</a> Points to <code>"/"</code> as the canonical using a <code>meta</code> tag.<br>
+      <a href="not-index.html"> This also is not the index - http header</a>: Points to <code>"/"</code> as the canonical using an HTTP <code>Link:</code> header.<br>
+    </p>
+
+   <h2>404s</h2>
+   <p>
+     <a href="true_404.html">True 404</a>: This link is broken.<br>
+     <a href="static/softly_crashing.html">Soft 404</a>: Although it returns a 200 http response, will produce a Soft 404 error in Search Console.
+   </p>
+
+   <h2>Server Errors</h2>
+   <p>
+     <a href="the_five_hundred.html">The five hundred</a>: Returns a 500 HTTP response (server error).
+   </p>
+
+   <h2>User directives</h2>
+   <p>
+     <a href="/static/blocked.html">Blocked</a>: Blocked from crawling by robots.txt.<br>
+     <a href="/static/noindex.html">No index</a>: No-index meta tag.<br>
+     <a href="/noindex-http.html">No index - HTTP</a>: the server returns an http <code>X-Robots-Tag: noindex</code> header.
+   </p>
+  </body>
+</html>

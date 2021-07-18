@@ -11,4 +11,6 @@ version = "0.1.0"
 [tool.poetry.dependencies]
 flask = "^1.1"
 python = "^3.8"
+Flask-SocketIO = "^5.1.0"
+simple-websocket = "^0.2.0"
 [tool.poetry.dev-dependencies]
