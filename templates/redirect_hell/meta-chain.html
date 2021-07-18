@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta http-equiv="refresh" content="0; URL=https://Search-Central-HTTP-headers.caiobarros1.repl.co/static/meta-chain/meta-chain10.html">
     <title>Meta Redirect Chain</title>
+    {% if chain < 7 %}
+    <meta http-equiv="refresh" content="0; URL={{ URLPrefix }}meta-chain{{ chain + 1 }}.html">
   </head>
   <body>
     Meta Redirect Chain! See you on part 13 <br>
-    9/13<br>
+    {{ chain }}/7<br>
+   {% else %}
+   </head>
+  <body>
+    You arrived at the end!<br>
+    13/13<br>
+  {% endif %}
     <a href="/">Back to index</a>
   </body>
 </html>

@@ -11,11 +11,13 @@
 	<h1>Indexing testing pages</h1>
 
 	<h2>Redirects</h2>
+
 	<p>
-		<a href="redirect1.html"> Redirect hell </a>: redirect loop using 301 http responses. Your browser should
+		<a href="redirect-loop.html"> Redirect loop </a>: redirect loop using 301 http responses. Your browser should
 		show an error.<br>
-      <a href="meta-redirect1.html"> Redirect hell - meta version </a>: redirect loop using <code>&lt;meta http-equiv=&quot;refresh&quot;&gt;</code>. Your browser will not know what to do.<br>
-      <a href="meta-chain/meta-chain01.html"> Meta chain:</a> 13-pages of chain redirects using <code>&lt;meta http-equiv=&quot;refresh&quot;&gt;</code>. Too much for Google.<br>
+      <a href="redirect-loop-meta1.html"> Redirect loop - meta version </a>: redirect loop using <code>&lt;meta http-equiv=&quot;refresh&quot;&gt;</code>. Your browser will not know what to do.<br>
+      <a href="redirect-chain1.html"> Redirect chain</a>: 4 redirects using 301 HTTP responses before arriving at the end. Seem like Google stops at 3.<br>
+      <a href="meta-chain1.html"> Meta chain</a>: 7-pages of chain redirects using <code>&lt;meta http-equiv=&quot;refresh&quot;&gt;</code>. Too much for Google.<br>
     </p>
 
     <h2>Duplicates</h2>
