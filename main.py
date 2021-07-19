@@ -39,7 +39,7 @@ def redirect_chain(red):
     else:
       #print(request.remote_addr, file=sys.stdout)
       print(request.user_agent, file=sys.stdout)
-      return render_template("redirect_hell/redirect-chain.html")
+      return render_template("redirect_loop/redirect-chain.html")
 
 @app.route('/redirect-loop<int:red>.html')
 def redirect_loop(red):
