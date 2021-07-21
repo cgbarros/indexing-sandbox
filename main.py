@@ -3,7 +3,7 @@ from flask import Flask, render_template, redirect, make_response, send_from_dir
 
 app = Flask(__name__, static_folder='static')
 
-URLPrefix = "https://indexing-sandbox.caiobarros1.repl.co/"
+URLPrefix = "https://indexing-sandbox.elyksorab.repl.co/"
 
 @app.route('/<path:path>')
 def send_static(path):
