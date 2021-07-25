@@ -12,9 +12,6 @@
 
 	<h2>Redirects</h2>
 
-  {% block top  %}
-  {% endblock %}
-
 	<p>
 		<a href="redirect-loop1.html"> Redirect loop</a>: redirect loop using 301 http responses. Your browser should show an error.<br>
       <a href="redirect-loop-meta1.html"> Redirect loop - meta version</a>: redirect loop using <code>&lt;meta http-equiv=&quot;refresh&quot;&gt;</code>. Your browser will not know what to do.<br>
@@ -49,9 +46,5 @@
    <p>
      <a href="robots.txt">robots.txt</a>
   </p>
-
-  {{% block backlink %}}
-  {{% endblock %}}
-
   </body>
 </html>

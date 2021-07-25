@@ -27,32 +27,44 @@ def meta_canonical():
 def meta_chain(chain):
   #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
-    return render_template("redirect_loop/meta-chain.html", chain=chain, URLPrefix=URLPrefix)
+    return render_template("redirects/meta-chain.html", chain=chain, URLPrefix=URLPrefix)
 
 @app.route('/redirect-chain<int:red>.html')
 def redirect_chain(red):
+    if red < 7:
+      #print(request.remote_addr, file=sys.stdout)
+      print(request.user_agent, file=sys.stdout)
+      redString = str(red+1)
+      return redirect(URLPrefix+"redirect-chain"+redString+".html", code=301)
+    else:
+      #print(request.remote_addr, file=sys.stdout)
+      print(request.user_agent, file=sys.stdout)
+      return render_template("redirects/redirect-end.html", chain=red)
+
+@app.route('/redirect-hsts<int:red>.html')
+def redirect_hsts(red):
     if red < 4:
       #print(request.remote_addr, file=sys.stdout)
       print(request.user_agent, file=sys.stdout)
       redString = str(red+1)
-      return redirect("/redirect-chain"+redString+".html", code=301)
+      return redirect("redirect-hsts"+redString+".html", code=301)
     else:
       #print(request.remote_addr, file=sys.stdout)
       print(request.user_agent, file=sys.stdout)
-      return render_template("redirect_loop/redirect-chain.html")
+      return render_template("redirects/redirect-end.html", chain=red)
 
 @app.route('/redirect-loop<int:red>.html')
-def redirect_loop(red):
+def redirects(red):
     #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
     newRed = str(red%2+1)
-    return redirect("/redirect-loop"+newRed+".html", code=301)
+    return redirect(URLPrefix+"redirect-loop"+newRed+".html", code=301)
 
 @app.route('/redirect-loop-meta<int:red>.html')
-def redirect_loop_meta(red):
+def redirects_meta(red):
     #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
-    return render_template("/redirect_loop/redirect-loop-meta.html", red=red, URLPrefix=URLPrefix)
+    return render_template("/redirects/redirect-loop-meta.html", red=red, URLPrefix=URLPrefix)
 
 @app.route('/the_five_hundred.html')
 def fiveHundred():
