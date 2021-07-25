@@ -6,4 +6,4 @@ Each of the pages here should show a different error in the Live URL test, from 
 
 The server part is build using [Flask](https://palletsprojects.com/p/flask/) (a Python WSGI framework) mainly because that was the template more easily available at [Replit](https://repl.it). You can also fork this project and immediately test it via https://replit.com/@ElykSorab/indexing-sandbox.
 
-The test page current URL is https://indexing-sandbox.elyksorab.repl.co.
+The test page current URL is https://indexing-sandbox.elyksorab.repl.co. Since this is hosted at [replit](https://repl.it) it may take a while to load on the first try.
