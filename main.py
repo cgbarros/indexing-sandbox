@@ -92,11 +92,11 @@ def noIndexHttp():
 def soft404():
     #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
-    return render_template("softly_crashing.html", title="Soft 404")
+    return render_template("404.html", title="Soft 404")
 
 @app.errorhandler(404)
 def page_not_found(e):
     # note that we set the 404 status explicitly
-    return render_template('softly_crashing.html', title="True 404"), 404
+    return render_template('404.html', title="True 404"), 404
 
 app.run(host='0.0.0.0', port=8080)
