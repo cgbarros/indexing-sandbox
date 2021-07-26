@@ -1,4 +1,4 @@
-import sys
+import sys, re
 from flask import Flask, render_template, redirect, make_response, send_from_directory, request
 
 app = Flask(__name__, static_folder='static')
@@ -98,5 +98,14 @@ def soft404():
 def page_not_found(e):
     # note that we set the 404 status explicitly
     return render_template('404.html', title="True 404"), 404
+
+@app.route('/bot_404.html')
+def bot404():
+    #print(request.remote_addr, file=sys.stdout)
+    print(request.user_agent, file=sys.stdout)
+    if re.search("Googlebot", str(request.user_agent)):
+      return render_template('404.html', title="Bot 404"), 404
+    else:
+      return render_template("bot_404.html")
 
 app.run(host='0.0.0.0', port=8080)
