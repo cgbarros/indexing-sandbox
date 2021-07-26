@@ -17,11 +17,11 @@ def index():
     print(request.user_agent, file=sys.stdout)
     return render_template("index.html")
 
-@app.route('/canonical-is-the-index.html')
+@app.route('/canonical-meta.html')
 def meta_canonical():
     #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
-    return render_template("canonical-is-the-index.html", URLPrefix=URLPrefix)
+    return render_template("canonical-meta.html", URLPrefix=URLPrefix)
 
 @app.route('/meta-chain<int:chain>.html')
 def meta_chain(chain):
@@ -72,11 +72,11 @@ def fiveHundred():
     print(request.user_agent, file=sys.stdout)
     return render_template("the_five_hundred.html"), 500
 
-@app.route('/not-index.html')
+@app.route('/canonical-http.html')
 def notIndex():
     #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
-    resp = make_response(render_template("not-index.html"), 200)
+    resp = make_response(render_template("canonical-http.html"), 200)
     resp.headers['Link'] = "<"+URLPrefix+">; rel='canonical'"
     return resp
 

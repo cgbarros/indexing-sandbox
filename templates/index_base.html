@@ -2,15 +2,19 @@
 <html lang="en" dir="ltr">
 
 <head>
-	<meta name="google-site-verification" content="K5u7BSA9-sx6S3mtBTOZYb2tYMQsRhZ6Nbs_Sx-5Ew8" />
+  {% block verification %}{% endblock %}
+  {% block head %}{% endblock %}
 	<meta charset="utf-8">
-	<title>Indexing test app</title>
+	<title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
 	<h1>Indexing testing pages</h1>
 
 	<h2>Redirects</h2>
+
+  {% block top  %}
+  {% endblock %}
 
 	<p>
 		<a href="redirect-loop1.html"> Redirect loop</a>: redirect loop using 301 http responses. Your browser should show an error.<br>
@@ -22,8 +26,8 @@
 
     <h2>Duplicates</h2>
     <p>
-      <a href="canonical-is-the-index.html">Not the index - meta tag</a> Points to <code>"/"</code> as the canonical using a <code>meta</code> tag.<br>
-      <a href="not-index.html"> This also is not the index - http header</a>: Points to <code>"/"</code> as the canonical using an HTTP <code>Link:</code> header.<br>
+      <a href="canonical-meta.html">Not the index - meta tag</a> Points to <code>"/"</code> as the canonical using a <code>meta</code> tag.<br>
+      <a href="canonical-http.html"> This also is not the index - http header</a>: Points to <code>"/"</code> as the canonical using an HTTP <code>Link:</code> header.<br>
     </p>
 
    <h2>404s</h2>
@@ -46,5 +50,9 @@
    <p>
      <a href="robots.txt">robots.txt</a>
   </p>
+
+  {% block backlink %}
+  {% endblock %}
+
   </body>
 </html>
