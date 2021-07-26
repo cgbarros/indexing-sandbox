@@ -88,7 +88,7 @@ def noIndexHttp():
     resp.headers['X-Robots-Tag'] = "noindex"
     return resp
 
-@app.route('/softly_crashing.html')
+@app.route('/soft_404.html')
 def soft404():
     #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
