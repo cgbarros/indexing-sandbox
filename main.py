@@ -72,12 +72,18 @@ def fiveHundred():
     print(request.user_agent, file=sys.stdout)
     return render_template("the_five_hundred.html"), 500
 
+# @app.route('/robots.txt')
+# def robotsError():
+#     #print(request.remote_addr, file=sys.stdout)
+#     print(request.user_agent, file=sys.stdout)
+#     return render_template("robots.txt"), 503
+
 @app.route('/canonical-http.html')
 def notIndex():
     #print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
     resp = make_response(render_template("canonical-http.html"), 200)
-    resp.headers['Link'] = "<"+URLPrefix+">; rel='canonical'"
+    resp.headers['Link'] = "<"+URLPrefix+'>; rel="canonical"'
     return resp
 
 @app.route('/noindex-http.html')
