@@ -2,17 +2,16 @@
 <html lang="en" dir="ltr">
 
 <head>
-  {% block verification %}{% endblock %}
-  {% block head %}{% endblock %}
+	{% block verification %}{% endblock %} {% block head %}{% endblock %}
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{% block title %}{% endblock %}</title>
 </head>
 
 <body>
 	<h1>Indexing testing pages</h1>
 
-  {% block top  %}
-  {% endblock %}
+	{% block top %} {% endblock %}
 
 	<h2>Redirects</h2>
 
@@ -24,7 +23,7 @@
       <a href="redirect-hsts1.html"> Redirects with hsts</a>: 4 redirects, but each time there is a 307 to the https version of the page. Google will call pages 1-3 two times to make sure, then give up.<br>
     </p>
 
-    <h2>Duplicates</h2>
+    <h2>User-declared Canonicals</h2>
     <p>
       <a href="canonical-meta.html">Not the index - meta tag</a> Points to <code>"/"</code> as the canonical using a <code>meta</code> tag.<br>
       <a href="canonical-http.html"> This also is not the index - http header</a>: Points to <code>"/"</code> as the canonical using an HTTP <code>Link:</code> header.<br>
@@ -42,12 +41,18 @@
      <a href="the_five_hundred.html">The five hundred</a>: Returns a 500 HTTP response (server error).
    </p>
 
-   <h2>User directives</h2>
+   <h2>User directives (robots.txt and noindex)</h2>
    <p>
      <a href="blocked.html">Blocked</a>: Blocked from crawling by robots.txt.<br>
      <a href="noindex.html">No index</a>: No-index meta tag.<br>
      <a href="noindex-http.html">No index - HTTP</a>: the server returns an http <code>X-Robots-Tag: noindex</code> header.
    </p>
+
+  <h2>Generic Errors</h2>
+  <p>
+		<a href="https://5xx-robots.caiobarros.com">URL is not on Google</a>: Even the Live test will throw a generic "URL is not on Google". In this case, because the robots.txt file in this subdomain returns a 500 server error.
+	</p>
+
    <p>
      <a href="robots.txt">robots.txt</a>
   </p>

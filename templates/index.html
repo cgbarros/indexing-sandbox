@@ -7,3 +7,17 @@
 {% block title %}
 Indexing test app
 {% endblock %}
+
+{% block top %}
+<p>
+  This is a collection of pages and server directives to test and showcase settings that will not allow pages to be indexed on Google.
+</p>
+
+<p>
+  Each of the pages here should show a different error in the Live URL test, from Search Console's <a href="https://support.google.com/webmasters/answer/9012289">URL Inspection Tool</a>.
+</p>
+
+<p>
+The server part is built using <a href="https://palletsprojects.com/p/flask/">Flask</a> (a Python WSGI framework) mainly because that was the template more easily available at <a href="https://repl.it">Replit</a>. You can also fork this project and immediately test it at <a href="https://replit.com/@ElykSorab/indexing-sandbox">https://replit.com/@ElykSorab/indexing-sandbox</a>.
+</p>
+{% endblock %}
