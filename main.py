@@ -114,4 +114,10 @@ def bot404():
     else:
       return render_template("bot_404.html")
 
+@app.route('/sitemap.xml')
+def sitemap():
+	resp = make_response(render_template("/sitemaps/sitemap.xml"), 200)
+	resp.headers['Link'] = '<https://techtraining-feb2022.elyksorab.repl.co/>; rel="canonical"'
+	return resp
+
 app.run(host='0.0.0.0', port=8080)
