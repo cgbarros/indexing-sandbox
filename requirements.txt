@@ -1,3 +1,2 @@
-pyton>=3.8.12
 flask>=1.1.4
 wekzeug>=1.0.1
