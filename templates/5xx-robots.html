@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>5xx Robots</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<h1>5xx Robots</h1>
+
+ 	<p>
+	This website also exists in the subdomain <code>5xx-robots</code> but, in it, the <code>robots.txt</code> file returnts a 500 HTTP error. Because of that, Google's Live Inspection Tool won't be able to throw a significant error. You'll see a generic "URL is not on Google". One way to confirm this issue is to try to inspect the robots.txt file itself, but there might be other causes for this problem.
+	</p>
+		
+  <p>
+  <a href="{{ five_hundred_url }}">{{ five_hundred_url }}</a><br>
+  <a href="{{ five_hundred_url}}/robots.txt">{{ five_hundred_url}}/robots.txt</a><br>
+  </p>
+
+  <a href="{{ indexing_url }}">Back to the indexing sandbox</a>
+  </body>
+</html>

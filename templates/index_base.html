@@ -38,7 +38,8 @@
 
    <h2>Server Errors</h2>
    <p>
-     <a href="the_five_hundred.html">The five hundred</a>: Returns a 500 HTTP response (server error).
+   <a href="the_five_hundred.html">The five hundred</a>: Returns a 500 HTTP response (server error).<br>
+     <a href="{{ five_hundred_url}}/5xx-robots.html">5xx Robots</a>: A mirror website that prevents crawling by returning a 500 HTTP response on <code>robots.txt</code>.
    </p>
 
    <h2>User directives (robots.txt and noindex)</h2>
@@ -48,12 +49,7 @@
      <a href="noindex-http.html">No index - HTTP</a>: the server returns an http <code>X-Robots-Tag: noindex</code> header.
    </p>
 
-  <h2>Generic Errors</h2>
   <p>
-		<a href="https://5xx-robots.caiobarros.com">URL is not on Google</a>: Even the Live test will throw a generic "URL is not on Google". In this case, because the robots.txt file in this subdomain returns a 500 server error.
-	</p>
-
-   <p>
      <a href="robots.txt">robots.txt</a>
   </p>
 
