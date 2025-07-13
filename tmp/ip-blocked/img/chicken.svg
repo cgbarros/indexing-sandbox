@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="610"
+   height="145"
+   id="svg1936"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   sodipodi:docname="chicken.svg">
+  <metadata
+     id="metadata3355">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     lock-margins="true"
+     pagecolor="#000000"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1147"
+     id="namedview3353"
+     showgrid="false"
+     fit-margin-top="1"
+     fit-margin-left="1"
+     fit-margin-right="1"
+     fit-margin-bottom="1"
+     inkscape:zoom="1.241148"
+     inkscape:cx="333.12272"
+     inkscape:cy="70.916805"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g23"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs1938">
+    <rect
+       id="rect27"
+       height="96.684685"
+       width="29.81111"
+       y="633.53198"
+       x="409.75571" />
+  </defs>
+  <g
+     transform="translate(146.05236,-669.71)"
+     id="layer1">
+    <g
+       transform="translate(65.585322,-20.8328)"
+       id="g23">
+      <text
+         transform="scale(1.0077714,0.99228852)"
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:97.2602px;line-height:1.05;font-family:sans-serif;fill:#221f1f;fill-opacity:1;stroke:none;stroke-width:0.892824"
+         x="-210.86836"
+         y="772.40753"
+         id="text26"><tspan
+           sodipodi:role="line"
+           id="tspan24"
+           x="-210.86836"
+           y="772.40753"
+           style="font-weight:bold;font-size:97.2602px;fill:#ffffff;fill-opacity:1;stroke-width:0.892824">chickenzon</tspan></text>
+      <g
+         transform="translate(-28.990507)"
+         id="g870">
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#ff9900;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path8"
+           d="m 203.45032,793.39838 c -34.99948,25.79739 -85.72909,39.56123 -129.40634,39.56123 -61.242549,0 -116.376559,-22.65135 -158.087569,-60.32496 -3.2771,-2.96252 -0.34083,-6.9999 3.59171,-4.69283 45.01431,26.19064 100.67269,41.94697 158.166229,41.94697 38.77469,0 81.4295,-8.02237 120.6499,-24.67006 5.92501,-2.51683 10.87999,3.88009 5.08607,8.17965" />
+        <path
+           inkscape:connector-curvature="0"
+           style="fill:#ff9900;fill-opacity:1;fill-rule:evenodd;stroke:none"
+           id="path10"
+           d="m 218.00068,776.75069 c -4.45688,-5.71527 -29.57261,-2.70033 -40.84585,-1.36327 -3.43442,0.41947 -3.95874,-2.56925 -0.86517,-4.71905 20.00346,-14.07844 52.82696,-10.01483 56.65462,-5.2958 3.82764,4.74526 -0.99624,37.64741 -19.79373,53.35128 -2.88385,2.41195 -5.63662,1.12734 -4.35198,-2.07113 4.2209,-10.53917 13.68519,-34.16054 9.20211,-39.90203" />
+      </g>
+      <text
+         transform="translate(2.3422091,1.5831986)"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect27);fill:#000000;fill-opacity:1;stroke:none;"
+         id="text25"
+         xml:space="preserve" />
+    </g>
+  </g>
+</svg>

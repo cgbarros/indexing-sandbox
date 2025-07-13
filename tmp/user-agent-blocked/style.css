@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+}
+
+.top-bar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #131921;
+	color: white;
+}
+
+.sub-bar {
+	background-color: #232f3e;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: white;
+	font-size: 120%;
+}
+
+.menu-item {
+	padding: 7px 50px 12px 50px;
+}
+
+.logo,.slogan {
+	padding: 10px 50px 10px 50px;
+}
+
+.menu-item:hover,
+.product.box:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.slogan {
+	font-size: 250%;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.product.box {
+	border-style: solid;
+	border-color: lightgray;
+	border-width: 1px;
+	padding: 5px;
+	min-height: 400px;
+	margin: 5px
+}
+
+.product.image {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.s-image {
+	max-width: 200px;
+}
+
+.product.box {
+	flex-basis: 250px;
+}
+
+.product.suggestion, 
+.product.title {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.product.book.author {
+	font-size: small;
+	color: gray;
+}
+
+.currency,
+.cents {
+	font-size: smaller;
+	vertical-align: top;
+}
+
+.full-price {
+	font-size: 24px;
+	vertical-align: top;
+}
