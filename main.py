@@ -88,7 +88,8 @@ def redirects_meta(red):
 def fiveHundred():
     print(request.remote_addr, file=sys.stdout)
     print(request.user_agent, file=sys.stdout)
-    return render_template("the_five_hundred.html"), 500
+    # return render_template("the_five_hundred.html"), 500
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'the_five_hundred.html'), 500
 
 @app.route('/robots.txt')
 def robots_txt():
