@@ -151,6 +151,18 @@ def bot404():
     else:
       return render_template("bot_404.html")
 
+@app.route('/1p-blocked.html')
+def first_party_blocked():
+    print(request.remote_addr, file=sys.stdout)
+    print(request.user_agent, file=sys.stdout)
+    return send_from_directory(app.static_folder,'1p-blocked.html') 
+
+@app.route('/templates/product-card.html')
+def product_card():
+    print(request.remote_addr, file=sys.stdout)
+    print(request.user_agent, file=sys.stdout)
+    return send_from_directory(os.path.join(app.root_path, 'templates'), 'product-card.html')
+
 @app.route('/sitemap.xml')
 def sitemap():
 	resp = make_response(render_template("/sitemaps/sitemap.xml"), 200)

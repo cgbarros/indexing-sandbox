@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: /blocked.html
+Disallow: /static/js/1p-blocked.js
