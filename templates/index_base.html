@@ -49,10 +49,14 @@
      <a href="noindex-http.html">No index - HTTP</a>: the server returns an http <code>X-Robots-Tag: noindex</code> header.
    </p>
 
+   <h2>Rendering</h2>
+   <p>
+   <a href="1p-blocked.html">1p Blocked</a>: Products are rendered on the page using javascript, but the script is blocked by <code>robots.txt</code>, so the crawler never sees the full content of the page.<br>
+   </p>
+
   <p>
      <a href="robots.txt">robots.txt</a>
   </p>
-
   {% block backlink %}
   {% endblock %}
 
